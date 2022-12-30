@@ -8,18 +8,27 @@ header{
 header > div{
     display: flex;
     
-    border: 1px solid black;
+    
     flex-direction: row;
     gap:3rem;
     padding : 3px;
 }
-header > #header-top{
+header > .header-top{
     color: white;
     background-color: rgba(2, 59,109);
     justify-content: space-between;
 }
 
-header > #header-top > h2{
+header .header-top > div> strong{
+    font-size: 24px;
+    opacity: 0.6;
+}
+header .header-top > div > strong:hover{
+    transition: 0.6s;
+    opacity: 1;
+}
+
+header > .header-top > h2{
     align-items: center;
 }
 
@@ -31,7 +40,17 @@ header > div:nth-child(2){
     
     background-color: rgba(61, 77, 106);
 }
-header > div:nth-child(2) > a:hover{
+
+header > div > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header > div:nth-child(2) > ul > a:hover{
+    transition: 0.6s;
     color:var(--skyblue);
 }
 header > div:nth-child(2) > a:last-child{
@@ -65,13 +84,26 @@ footer .newsletter > h4{
     
     
 }
-footer.newsletter.subscribe > input[type=email]{
+footer .newsletter > p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+footer .newsletter form{
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 6%);;
+
+}
+footer .newsletter form > input[type=email]{
     border: 0;
     padding: 4px 8px;
-    width: calc(100% - 100px);
+    width: calc(100% - 0px);
     margin: 0;
 }
-.newsletter.subscribe input[type="submit"]{
+footer .newsletter input[type="submit"]{
     position: absolute;
     top: 0;
     right: 0;
@@ -83,17 +115,11 @@ footer.newsletter.subscribe > input[type=email]{
     color: #fff;
     transition: 0.3s;
     border-radius: 50px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
     
 
 
 }
-.newsletter > #subscribe{
-    display: flex;
-    justify-items: center;
-    
-    
-}
-
 
 #content-container {
     display: grid;
@@ -113,13 +139,16 @@ footer.newsletter.subscribe > input[type=email]{
     flex-direction: row;
     gap: 2rem;
 }
-#content-container.content > h2 {
-    
-    padding: 1rem;
+#content-container.content > h3 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #37517e;
 }
-#content-container.content.contents > span{
-    color : var(--skyblue);
-}
+
 #content-container.content > h3 > a:hover {
    
     color: var(--skyblue);
@@ -131,11 +160,33 @@ footer.newsletter.subscribe > input[type=email]{
     flex-direction: row;
     justify-content: space-between;
     color: white;
-    padding: 1rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color:rgba(55, 81, 126);
 
 }
+#bottom .copyright > strong{
+    font-weight: bolder;
+}
+#bottom .credits{
+    float: right;
+    font-size: 13px;
+}
+#bottom .credits > a{
+    color: #47b2e4;
+    transition: 0.3s;
+}
 
 #bottom > #up{
-    background-image: url();
+    position: sticky;
+    font-size: 24px;
+    border:2px solid #47b2e4;
+    text-align: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: #47b2e4;
+}
+#bottom > #up:hover{
+
 }
