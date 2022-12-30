@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
+}
+
+html{font-size:62.5%;}
+
+:root{
+    --bg_gray:#f3f5fa;
+    --font_navy:#37517e;
+    --skyblue:#47b2e4;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+section{
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-dark{
+    background: var(--bg_gray);
+}
+
+@media screen and (min-width: 1200px){
+    .container{ max-width: 1140px; }
+}
+
+@media screen and (min-width: 1400px){
+    .container{ max-width: 1320px; }
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row-center{
+    justify-content: center;
+}
+
+.column-center{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.half{
+    width: 50%;
+    padding: 0 12px;
+}
+
+.img-full{
+    max-width: 100%;
+    height: auto;
+}
+
+.half h3{
+    color: var(--font_navy);
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 8px 0;
+}
+
+.half p{
+    color: #444;
+    font-size: 16px;
+    font-weight: 400;   
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0 0 16px 0;
+}
+
+.progress{
+    display: block;
+    height: 60px;
+}
+
+.progress-description{
+    display: flex;
+    margin: 0 0 6px 0;
+}
+
+.progress-description span{
+    color: var(--font_navy);
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.progress-bar{
+    height: 10px;
+    background: #e8edf5;
+}
+
+.progress-bar > span{
+    display: block;
+    height: 100%;
+    background: #4668a2;
+    overflow: hidden;
+}
+
+.title{
+    text-align: center;
+    padding-bottom: 30px
+}
+
+.title h2{
+    font-family: 'Jost', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: var(--font_navy);
+    position: relative;
+}
+
+.title h2 span:first-child{
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.title h2 span:last-child{
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: #47b2e4;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+
+.title p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    line-height: 1.5;
+}
+
+#service-list{
+    display: flex;
+    width: 100%;
+}
+
+.service{
+    width: 25%;
+    height: auto;
+    background: #fff;
+    box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+    margin: 0 12px;
+    padding: 50px 30px;
+    transition: all ease-in-out 0.4s;
+}
+
+.service:hover{
+    transform: translateY(-10px);
+}
+
+.service:hover h4{
+    color: var(--skyblue);
+}
+
+.service h4{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+    color: var(--font_navy);
+    margin: 0 0 15px 0;
+    transition: all ease-in-out 0.4s;
+}
+
+.service p{
+    line-height: 24px;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+}
+
+.icon{
+    /* color: var(--skyblue); */
+    color: #47b2e4;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#cta{
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url(./cta-bg.jpg) fixed center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+#left-content{
+    padding: 0 12px;
+    width: 75%;
+}
+
+#left-content h3{
+    font-size: 28px;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 8px 0;
+}
+
+#left-content p{
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0 0 16px 0;
+}
+
+#right-content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 12px;
+    text-align: center;
+}
+
+#cta-button{
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 1px;
+    margin: 10px;
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    vertical-align: middle;
+    transition: all ease 0.5s;
+}
+
+#cta-button:hover{
+    background-color: var(--skyblue);
+    border-color: var(--skyblue);
+}
