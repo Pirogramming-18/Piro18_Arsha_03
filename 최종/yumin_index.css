@@ -5,9 +5,21 @@ header{
     z-index: 100;
     opacity: 0.8;
 }
-header.header-scrolled{
-    background: rgba(40, 58, 90, 0.9);
+@media (max-width: 1020px){
+    header .header-top .center {
+        display: none;
+
+    }
+    header  .header-second .navbar{
+        display: none;
+        
+    } 
+ 
+
 }
+
+    
+
 /* header > div{
     display: flex;
     
@@ -34,11 +46,11 @@ header .header-top > img:hover{
 
 }
 
-header .header-top > div> strong{
+header .header-top .center > strong{
     font-size: 24px;
     opacity: 0.6;
 }
-header .header-top > div > strong:hover{
+header .header-top .center > strong:hover{
     transition: 0.6s;
     opacity: 1;
 }
@@ -79,6 +91,7 @@ header .header-second .logo{
     
 }
 
+
 header .header-second .logo:hover{
     cursor:pointer;
     
@@ -101,11 +114,11 @@ header .header-second .navbar > ul > li:hover{
     transition: 0.6s;
     color:var(--skyblue);
 }
-header .header-second > ul > a:last-child{
+header .header-second .navbar> ul > li:last-child{
     border: 3px solid var(--skyblue);
-   
-    padding: 5px;
-    border-radius: 30%;
+    
+    padding: 15px 30px;
+    border-radius: 40%;
     
 }
 header > div:nth-child(2) > a:last-child:hover{
@@ -172,26 +185,29 @@ footer .newsletter input[type=submit]:hover{
     cursor:pointer;
 }
 
-#content-container {
-    display: grid;
+#content-container-y {
+    /* display: grid;
     border-bottom: 1px solid black;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap:3px;
-    padding:1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:20px;
+    padding:60px 0 30px 0;
     background-color: white;
     overflow: none;
 }
 
-#content-container.content > #email{
-    display: inline-block;
-}
-#content-container.content:nth-child(2){
+#content-container-y{
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 10px;
 }
-#content-container.content > h3 {
-    font-size: 28px;
+
+
+#content-container-y .content > h2 {
+    font-size: 21.2px;
     margin: 0 0 10px 0;
     padding: 2px 0 2px 0;
     line-height: 1;
@@ -200,14 +216,37 @@ footer .newsletter input[type=submit]:hover{
     color: #37517e;
 }
 
-#content-container.content > h3 > a:hover {
-   
+#content-container-y .content > h3{
+    font-size: 14px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+#content-container-y .content > p{
+
+    margin: 10px 0;
+}
+#content-container-y .content > span{
+    font-size: larger;
+    color: var(--skyblue);
+    margin: 10px 20px;
+}
+
+#content-container-y .content > strong{
+    font-weight: bolder;
+    font-size: larger;
+
+}
+
+
+
+#content-container-y .content > h3:hover {
+    cursor:pointer;
+    transition: 0.6s;
     color: var(--skyblue);
 }
 
-#content-container.content > a:hover{
-    cursor:pointer;
-}
+
 
 #bottom{
     display: flex;
