@@ -52,7 +52,7 @@ footer .newsletter{
     padding : 2rem;
     align-items: center;
     background-color: #f3f5fa;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 footer .newsletter > h4{
@@ -65,8 +65,19 @@ footer .newsletter > h4{
     
     
 }
-.newsletter > a{
-    border: 1px solid black;
+footer.newsletter.subscribe > input[type=email]{
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+    margin: 0;
+}
+.newsletter.subscribe input[type="submit"]{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    
+
 }
 .newsletter > #subscribe{
     display: flex;
