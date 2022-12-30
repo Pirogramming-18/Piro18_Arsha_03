@@ -25,21 +25,11 @@
 }
 
 @media(min-width:992px){
-    .intro_container,{
+    .intro_container{
     max-width:960px;
 }}
 
-@media(min-width:768px){
-{
-    max-width:720px;
 
-}}
-
-@media(min-width:576px){
-    r{
-        max-width:540px;
-    
-    }}
 
 .center-align{
     margin:0 auto;
@@ -268,7 +258,8 @@
     width: 170px;
     height: 1px;
     background: #ddd;
-    bottom: -100px;
+    bottom: -150px;
+    
       
 }
 
@@ -279,7 +270,7 @@
     width: 40px;
     height: 1px;
     background: var(--skyblue);
-    bottom: -100px;
+    bottom: -150px;
     left:calc(49%);
       
 }
