@@ -1,0 +1,115 @@
+body{
+    background-color:gray; 
+}
+
+header{
+    
+    position: sticky;
+    top: 0;
+}
+header > div{
+    display: flex;
+    
+    border: 1px solid black;
+    flex-direction: row;
+    gap:3rem;
+    padding : 3px;
+}
+header > #header-top{
+    color: white;
+    background-color: rgba(2, 59,109);
+    justify-content: space-between;
+}
+
+header > #header-top > h2{
+    align-items: center;
+}
+
+
+header > div:nth-child(2){
+    align-items: center;
+    color: white;
+    height: 3rem;
+    
+    background-color: rgba(61, 77, 106);
+}
+header > div:nth-child(2) > a:hover{
+    color:var(--skyblue);
+}
+header > div:nth-child(2) > a:last-child{
+    border: 3px solid var(--skyblue);
+   
+    padding: 5px;
+    border-radius: 30%;
+    
+}
+header > div:nth-child(2) > a:last-child:hover{
+    background-color: var(--skyblue);
+    color:white;
+}
+
+#newsletter{
+    display: flex;
+    flex-direction: column;
+    padding : 2rem;
+    align-items: center;
+    background-color:rgba(243,245,250);
+    border: 1px solid black;
+}
+#newsletter > h1{
+    color:rgba(55, 81, 126);
+    
+    
+}
+#newsletter > a{
+    border: 1px solid black;
+}
+#newsletter > #subscribe{
+    display: flex;
+    justify-items: center;
+    
+    
+}
+
+
+#content-container {
+    display: grid;
+    border-bottom: 1px solid black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:3px;
+    padding:1rem;
+    background-color: white;
+    overflow: none;
+}
+
+#content-container.content > #email{
+    display: inline-block;
+}
+#content-container.content:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+#content-container.content > h2 {
+    
+    padding: 1rem;
+}
+#content-container.content > h3 > a:hover {
+   
+    color: var(--skyblue);
+}
+
+
+#bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    padding: 1rem;
+    background-color:rgba(55, 81, 126);
+
+}
+
+#bottom > #up{
+    background-image: url();
+}
