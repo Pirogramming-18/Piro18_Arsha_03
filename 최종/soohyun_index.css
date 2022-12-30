@@ -88,7 +88,7 @@ p {
     max-width: 540px;
 }
 
-.pricing .box {
+.pricing .sh-box {
     padding: 60px 40px;
     box-shadow: 0 3px 20px -2px rgb(20 45 100 / 10%);
     background: #fff;
@@ -431,7 +431,7 @@ a {
     margin-top: var(--bs-gutter-y);
 }
 
-.contact .info {
+.contact .sh-info {
     border-top: 3px solid #47b2e4;
     border-bottom: 3px solid #47b2e4;
     padding: 30px;
@@ -440,7 +440,7 @@ a {
     box-shadow: 0 0 24px 0 rgb(0 0 0 / 10%);
 }
 
-.contact .info i {
+.contact .sh-info i {
     font-size: 20px;
     color: #47b2e4;
     float: left;
@@ -454,7 +454,7 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-.contact .info h4 {
+.contact .sh-info h4 {
     padding: 0 0 0 60px;
     font-size: 22px;
     font-weight: 600;
@@ -462,7 +462,7 @@ a {
     color: #37517e;
 }
 
-.contact .info p {
+.contact .sh-info p {
     padding: 0 0 10px 60px;
     margin-bottom: 20px;
     font-size: 14px;
