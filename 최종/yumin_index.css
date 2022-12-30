@@ -46,23 +46,29 @@ header > div:nth-child(2) > a:last-child:hover{
     color:white;
 }
 
-#newsletter{
+footer .newsletter{
     display: flex;
     flex-direction: column;
     padding : 2rem;
     align-items: center;
-    background-color:rgba(243,245,250);
+    background-color: #f3f5fa;
     border: 1px solid black;
 }
-#newsletter > h1{
+
+footer .newsletter > h4{
+    font-size: 24px;
+    margin: 0 0 24px 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
     color:rgba(55, 81, 126);
     
     
 }
-#newsletter > a{
+.newsletter > a{
     border: 1px solid black;
 }
-#newsletter > #subscribe{
+.newsletter > #subscribe{
     display: flex;
     justify-items: center;
     
@@ -91,6 +97,9 @@ header > div:nth-child(2) > a:last-child:hover{
 #content-container.content > h2 {
     
     padding: 1rem;
+}
+#content-container.content.contents > span{
+    color : var(--skyblue);
 }
 #content-container.content > h3 > a:hover {
    
