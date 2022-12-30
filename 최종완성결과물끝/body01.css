@@ -257,7 +257,7 @@
     width: 120px;
     height: 1px;
     background: #ddd;
-    bottom: -30px;
+    bottom: -50px;
     left: calc(50% - 60px);
 }
 
@@ -268,7 +268,7 @@
     width: 40px;
     height: 3px;
     background: #47b2e4;
-    bottom: -31px;
+    bottom: -51px;
     left: calc(50% - 20px);
 }
 

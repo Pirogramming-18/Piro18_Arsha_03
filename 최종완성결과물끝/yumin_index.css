@@ -43,7 +43,6 @@ header  .header-top{
 header .header-top > img:hover{
     cursor: pointer;
     opacity: 1;
-
 }
 
 header .header-top .center > strong{
@@ -54,11 +53,6 @@ header .header-top .center > strong:hover{
     transition: 0.6s;
     opacity: 1;
 }
-
-header > .header-top > h2{
-    align-items: center;
-}
-
 
 header .header-second{
     display: flex;
