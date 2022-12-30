@@ -4,4 +4,7 @@ html{font-size:62.5%;}
     --bg_gray:#f3f5fa;
     --font_navy:#37517e;
     --skyblue:#47b2e4;
+    --topic_underline:40px;
+    --background: #F4F5FA;
+    --underline_color: #DDDDDD;
 }
