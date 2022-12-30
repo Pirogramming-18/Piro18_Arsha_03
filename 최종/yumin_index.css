@@ -18,12 +18,14 @@ header.header-scrolled{
 } */
 header  .header-top{
     display: flex;
+    height: 45px;
     flex-direction: row;
     gap: 3rem;
     padding: 3px;
     color: white;
     background-color:#023b6d;
     justify-content: space-between;
+    align-items: center;
 }
 
 header .header-top > img:hover{
@@ -203,14 +205,19 @@ footer .newsletter input[type=submit]:hover{
     color: var(--skyblue);
 }
 
+#content-container.content > a:hover{
+    cursor:pointer;
+}
 
 #bottom{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     color: white;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 55px;
     background-color:rgba(55, 81, 126);
 
 }
@@ -227,10 +234,11 @@ footer .newsletter input[type=submit]:hover{
 }
 
 #bottom .up{
-    position: sticky;
+    position: fixed;
     bottom: 0;
+    right : 0;
     z-index: 100;
-    font-size: 20px;
+    padding: 10px;
     border:2px solid #47b2e4;
     text-align: center;
     height: 3rem;
@@ -239,11 +247,12 @@ footer .newsletter input[type=submit]:hover{
     background-color: #47b2e4;
 }
 #bottom .up:hover{
-    background-color: #54b8e6; ;
+    cursor: pointer;
+    background-color: #64c4f0; ;
     transition: 0.6s;
 
 }
-#botom .up > a >p{
-    margin-top: 30px;
-    padding : 10px 0;
+#bottom .up .i{
+    font-size: 30px;
+    margin-top: 100px;
 }
