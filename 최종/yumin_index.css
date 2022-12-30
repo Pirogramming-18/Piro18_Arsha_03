@@ -76,7 +76,15 @@ footer.newsletter.subscribe > input[type=email]{
     top: 0;
     right: 0;
     bottom: 0;
+    border: 0;
+    font-size: 16px;
+    padding: 0 20px;
+    background-color: var(--skyblue);
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 50px;
     
+
 
 }
 .newsletter > #subscribe{
