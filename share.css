@@ -1,7 +1,14 @@
+
 html{font-size:62.5%;}
 
+
+/*jost-sans-serif 첫화면(better solutions~ 사용)*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@800&family=Nanum+Gothic+Coding&display=swap');
+
+                
 :root{
     --bg_gray:#f3f5fa;
-    --font_navy:#37517e;
+    --navy:#37517e;
     --skyblue:#47b2e4;
+    --font:sans-serif;
 }
